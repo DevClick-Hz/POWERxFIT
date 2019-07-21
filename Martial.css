@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css?family=Fjalla+One&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap");
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+/*-----------------------------navbar--------------------------------*/
+
+.navbar {
+  font-size: 18px;
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+  font-family: "Fjalla One", sans-serif;
+  background-color: #6e1d23 !important;
+  border-bottom: 2px solid rgb(255, 0, 0);
+}
+
+.navbar-nav {
+  margin: 0 auto;
+}
+
+.nav-item {
+  margin: 0 10px;
+  padding: 2px;
+}
+
+.nav-link,
+.navbar h3 {
+  color: white !important;
+  margin: 0;
+}
+
+.nav-item:hover,
+.active {
+  border-top: 1px solid rgb(255, 0, 0);
+}
+
+.dropdown-menu {
+  background-color: #6e1d23;
+}
+
+.dropdown-item {
+  color: white;
+}
+
+.dropdown-item:hover {
+  background-color: #6e1d23;
+  color: red;
+}
+
+/*-----------------------------heading --------------------------------*/
+
+.m-heading {
+  height: 100vh;
+  background-image: url("pictures/ph-img.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.mh-text {
+  position: absolute;
+  top: 25%;
+  left: 15%;
+  width: 70%;
+  font-family: "Fjalla One", sans-serif;
+  color: white;
+  font-size: 40px;
+  text-shadow: 0 1px 5px black;
+}
+
+.mh-text h1 {
+  color: rgb(255, 0, 0);
+  font-size: 70px;
+}
+
+/*-----------------------------content --------------------------------*/
+
+.m-progs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  margin: 70px auto;
+}
+
+.prog-text {
+  color: #575757;
+  text-align: left;
+  padding: 40px 35px;
+  font-family: "Roboto Slab", serif;
+  font-size: 20px;
+  font-weight: bold;
+  width: 45%;
+}
+
+.martial-img {
+  height: 350px;
+  width: 35%;
+}
+
+#Martial-pro {
+  border: 1px solid white;
+  padding: 100px 0;
+}
+
+.prog-text h3 {
+  color: #ff0011;
+}
+
+.sport-time {
+  color: #ff0011;
+  font-size: 18px;
+}
+
+/*-----------------------------Footer--------------------------------*/
+
+footer {
+  display: block;
+  background-color: #6e1d23;
+  padding: 10px;
+  color: rgb(255, 255, 255);
+  border-top: 2px solid rgb(255, 0, 0);
+  font-family: "Fjalla One", sans-serif;
+}
+
+.external {
+  display: inline-block;
+  margin: 10px 20px;
+}
+
+footer a {
+  color: rgb(255, 255, 255);
+  margin: 0;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+footer a:hover {
+  color: rgb(255, 0, 0);
+  margin: 0;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+@media (max-width: 767px) {
+  .mh-text h1 {
+    color: rgb(255, 0, 0);
+    font-size: 40px;
+  }
+  .mh-text p {
+    font-size: 30px;
+  }
+  .martial-img,
+  .prog-text,
+  .m-progs {
+    width: 95%;
+  }
+}

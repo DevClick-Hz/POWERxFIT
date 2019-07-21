@@ -1,0 +1,341 @@
+@import url("https://fonts.googleapis.com/css?family=Fjalla+One&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap");
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+/*--------------navbar------------*/
+
+.navbar {
+  font-size: 18px;
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+  font-family: "Fjalla One", sans-serif;
+  background-color: #6e1d23 !important;
+  border-bottom: 2px solid rgb(255, 0, 0);
+}
+
+.navbar-nav {
+  margin: 0 auto;
+}
+
+.nav-item {
+  margin: 0 10px;
+  padding: 2px;
+}
+
+.nav-link,
+.navbar h3 {
+  color: white !important;
+  margin: 0;
+}
+
+.nav-item:hover,
+.active {
+  border-top: 1px solid rgb(255, 0, 0);
+}
+
+.dropdown-menu {
+  background-color: #6e1d23;
+}
+
+.dropdown-item {
+  color: white;
+}
+
+.dropdown-item:hover {
+  background-color: #6e1d23;
+  color: red;
+}
+
+/*-----------------------------heading text--------------------------------*/
+
+.head-logo {
+  color: white;
+  position: absolute;
+  top: 30%;
+  left: 15%;
+  width: 70%;
+  text-align: center;
+  font-family: "Fjalla One", sans-serif;
+  font-size: 40px;
+  text-shadow: 0 1px 5px black;
+}
+
+.head-logo h1 {
+  font-size: 70px;
+  color: rgb(255, 0, 0);
+  letter-spacing: 2px;
+}
+
+/*-----------------------------head slider--------------------------------*/
+
+.slider {
+  width: 100%;
+  max-height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+.slides-wrapper {
+  width: 100%;
+  position: relative;
+}
+.slide {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-height: 100vh;
+  display: none;
+}
+.slide.current {
+  display: block;
+  -webkit-animation: fade 1s ease-out;
+  animation: fade 1s ease-out;
+}
+.slide__img {
+  display: block;
+  width: 100%;
+}
+
+.indicators {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.indicators__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 2rem;
+  margin: 0;
+  padding: 0;
+}
+.indicators__item {
+  display: block;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 2px solid #6e1d23;
+  border-radius: 50%;
+  background: #ffffff;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+.indicators__item.active {
+  background: #ffffff;
+  border: 2px solid red;
+  border-radius: 50%;
+}
+.indicators__item:not(:last-child) {
+  margin-right: 1rem;
+}
+
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*-----------------------------About-us--------------------------------*/
+
+#about-us {
+  margin: 100px 0;
+  font-family: "Roboto Slab", serif;
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.about-img {
+  width: 45%;
+  color: rgb(114, 114, 114);
+  box-shadow: -10px 10px 10px currentColor;
+  margin: 0;
+}
+
+.about-text {
+  width: 45%;
+  margin: 0;
+  color: #3b3b3b;
+  background-color: rgb(241, 241, 241);
+  text-align: left;
+  padding: 70px 20px;
+  font-size: 1.5rem;
+  box-shadow: 10px 10px 10px rgb(114, 114, 114);
+}
+.about-text h1 {
+  color: #6e1d23;
+}
+.goals {
+  list-style: none;
+  margin: 100px 0;
+  color: #6e1d23;
+  font-size: 1.3rem;
+}
+
+#goal {
+  display: inline-block;
+  margin: 0 50px;
+}
+
+#goal .fas {
+  margin: 20px 0;
+  background-color: #6e1d23;
+  color: white;
+  padding: 10px;
+}
+/*-----------------------------perfect weight--------------------------------*/
+.weight {
+  width: 40%;
+  margin: 40px auto;
+  padding: 30px 20px;
+  background-color: rgb(241, 241, 241);
+  border: 1px solid #6e1d23;
+  color: #6e1d23;
+}
+.weight input {
+  max-width: 35%;
+  height: 70px;
+  margin: 10px auto;
+  padding: 0;
+  text-align: center;
+  font-size: 20px;
+  color: #6e1d23;
+}
+#calcu-btn {
+  background: #6e1d23;
+  color: white;
+  font-size: 20px;
+  padding: 10px 20px;
+  margin: 15px 0;
+}
+#calcu-btn:hover {
+  border: 2px solid red;
+}
+select {
+  height: 40px;
+  width: 80px;
+  padding: 0;
+  margin: 10px 20px;
+  font-size: 20px;
+  color: white;
+  background-color: #6e1d23;
+}
+/*-----------------------------Footer--------------------------------*/
+
+footer {
+  display: block;
+  background-color: #6e1d23;
+  padding: 10px;
+  color: rgb(255, 255, 255);
+  border-top: 2px solid rgb(255, 0, 0);
+  font-family: "Fjalla One", sans-serif;
+}
+
+.external {
+  display: inline-block;
+  margin: 10px 20px;
+}
+
+footer a {
+  color: rgb(255, 255, 255);
+  margin: 0;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+footer a:hover {
+  color: rgb(255, 0, 0);
+  margin: 0;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/*-----------------------------media Quiry --------------------------------*/
+
+@media (max-width: 767px) {
+  .pro-list {
+    justify-content: center;
+  }
+  .head-logo {
+    top: 28%;
+    font-size: 30px;
+    left: 0;
+    width: 100%;
+  }
+  .head-logo h1 {
+    font-size: 40px;
+  }
+  .title {
+    font-size: 24px;
+  }
+  .about-img {
+    width: 100%;
+  }
+  .about-text {
+    font-size: 1.5rem;
+    width: 100%;
+  }
+  .silder,
+  .slide {
+    height: 700px;
+  }
+  .weight {
+    width: 90%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .head-logo {
+    top: 25%;
+    left: 15%;
+    font-size: 35px;
+  }
+  .head-logo h1 {
+    font-size: 60px;
+  }
+  .silder,
+  .slide {
+    height: 700px;
+  }
+  .weight {
+    width: 90%;
+  }
+}

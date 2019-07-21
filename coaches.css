@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css?family=Fjalla+One&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap");
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+/*-----------------------------navbar --------------------------------*/
+
+.navbar {
+  font-size: 18px;
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+  font-family: "Fjalla One", sans-serif;
+  background-color: #6e1d23 !important;
+  border-bottom: 2px solid rgb(255, 0, 0);
+}
+
+.navbar-nav {
+  margin: 0 auto;
+}
+
+.nav-item {
+  margin: 0 10px;
+  padding: 2px;
+}
+
+.nav-link,
+.navbar h3 {
+  color: white !important;
+  margin: 0;
+}
+
+.nav-item:hover,
+.active {
+  border-top: 1px solid rgb(255, 0, 0);
+}
+
+.dropdown-menu {
+  background-color: #6e1d23;
+}
+
+.dropdown-item {
+  color: white;
+}
+
+.dropdown-item:hover {
+  background-color: #6e1d23;
+  color: red;
+}
+
+/*-----------------------------content --------------------------------*/
+
+.ch-text {
+  position: relative;
+  width: 100%;
+  font-family: "Fjalla One", sans-serif;
+  color: rgb(58, 58, 58);
+  padding-top: 150px;
+}
+
+.ch-text h1 {
+  color: rgb(255, 0, 0);
+  font-size: 70px;
+}
+
+.ch-text p {
+  font-size: 40px;
+}
+
+#coaches {
+  margin: 100px 0;
+  padding: 100px 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 600px));
+  justify-content: space-around;
+  grid-gap: 100px 0;
+  border: 1px solid white;
+}
+
+.c-text {
+  text-align: left;
+  color: rgb(131, 131, 131);
+  font-size: 1.2rem;
+  font-weight: 500;
+  max-width: 45%;
+  padding: 20px 20px;
+  font-family: "Roboto Slab", serif;
+}
+
+.coach {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 500px;
+}
+
+.coach img {
+  max-width: 55%;
+  height: 500px;
+  color: rgb(114, 114, 114);
+  box-shadow: -10px 10px 10px currentColor;
+}
+
+.c-text h3 {
+  color: rgb(255, 0, 17);
+}
+
+.coach .fab {
+  margin: 20px 10px;
+  color: rgb(255, 0, 17);
+}
+
+/*-----------------------------Footer--------------------------------*/
+
+footer {
+  display: block;
+  background-color: #6e1d23;
+  padding: 10px;
+  color: rgb(255, 255, 255);
+  border-top: 2px solid rgb(255, 0, 0);
+  font-family: "Fjalla One", sans-serif;
+}
+
+.external {
+  display: inline-block;
+  margin: 10px 20px;
+}
+
+footer a {
+  color: rgb(255, 255, 255);
+  margin: 0;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+footer a:hover {
+  color: rgb(255, 0, 0);
+  margin: 0;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+@media only screen and (min-width: 316px) and (max-width: 600px) {
+  .coach {
+    display: block;
+  }
+  .coach img {
+    max-width: 100%;
+  }
+  .c-text {
+    max-width: 100%;
+  }
+}
